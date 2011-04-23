@@ -2,6 +2,11 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Use pathogen to easily modify the runtime path to include all
+" plugins under the ~/.vim/bundle directory
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set termencoding=utf-8
 set encoding=utf-8
 set fileformats=unix
@@ -84,7 +89,3 @@ let g:doxygen_enhanced_color=1
 " netrw
 let g:netrw_silent=1
 
-" Use pathogen to easily modify the runtime path to include all
-" plugins under the ~/.vim/bundle directory
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
