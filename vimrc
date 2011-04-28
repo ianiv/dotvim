@@ -46,11 +46,8 @@ set foldlevelstart=99
 
 " UI
 "colorscheme desert
-if has('gui_running')
-    set background=dark
-else
-    set background=dark
-endif
+set t_Co=16
+set background=dark
 colorscheme solarized
 set guioptions=Acgtm
 set guifont=DejaVu_Sans_Mono:h12
