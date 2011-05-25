@@ -55,7 +55,7 @@ set wildmenu
 set mouse=a
 set noerrorbells
 set cmdheight=3
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w%{fugitive#statusline()}[FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
 set showmatch                   " set show matching parenthesis
 set lazyredraw                  " don't update the display while executing macros
