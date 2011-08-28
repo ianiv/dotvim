@@ -109,3 +109,6 @@ cmap trim :call Preserve("%s/\\s\\+$//e")
 
 " Re-indent whole file
 nmap _= :call Preserve("normal gg=G")<CR>
+
+" Delete fugitive buffers instead of hiding them
+autocmd BufReadPost fugitive://* set bufhidden=delete
