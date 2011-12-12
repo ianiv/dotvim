@@ -7,6 +7,9 @@ set nocompatible
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" use comma as <Leader> key instead of backslash
+let mapleader=","
+
 set termencoding=utf-8
 set encoding=utf-8
 set fileformats=unix
@@ -71,6 +74,9 @@ set completeopt-=preview
 " Disable backups
 set nobackup
 set noswapfile
+
+" ,, Go to previous buffer
+nnoremap <leader><leader> <c-^>
 
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
