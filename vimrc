@@ -26,10 +26,10 @@ filetype plugin indent on
 syntax on
 
 " Search options
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+set hlsearch      " highlight matches
+set incsearch     " incremental search
+set ignorecase    " case insensitive search
+set smartcase     " unless search term contains capital letters
 " ctrl-n clears search higlight
 nmap <silent> <C-n> :noh<CR>
 
@@ -72,8 +72,6 @@ set completeopt-=preview
 set nobackup
 set noswapfile
 
-" Go to next tab
-map <c-tab> gt<cr>
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
 
