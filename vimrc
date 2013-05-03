@@ -48,10 +48,13 @@ set foldcolumn=2
 set foldlevelstart=99
 
 " UI
-"colorscheme desert
-set t_Co=16
-set background=dark
-colorscheme solarized
+"set t_Co=16
+"set background=dark
+"if !has('gui_running')
+"  let g:solarized_termcolors=256 " So it works in a terminal that I can't customize colors
+"endif
+"colorscheme solarized
+colorscheme desert
 set guioptions=Acgtm
 set guifont=DejaVu_Sans_Mono:h12
 set wildmenu
