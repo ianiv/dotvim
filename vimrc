@@ -4,8 +4,7 @@ set nocompatible
 
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " use comma as <Leader> key instead of backslash
 let mapleader=","
@@ -25,8 +24,8 @@ set pastetoggle=<F2>            " when in insert mode, press <F2> to go to
                                 "    paste mode, where you can paste mass data
                                 "    that won't be autoindented
 
-filetype plugin indent on
 syntax on
+filetype plugin indent on
 
 " Search options
 set hlsearch      " highlight matches
