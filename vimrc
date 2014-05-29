@@ -55,7 +55,7 @@ set foldlevelstart=99
 "colorscheme solarized
 colorscheme desert
 set guioptions=Acgtm
-set guifont=DejaVu_Sans_Mono:h12
+set guifont=DejaVu_Sans_Mono:h11
 set wildmenu
 set mouse=a
 set noerrorbells
